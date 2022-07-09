@@ -1,15 +1,15 @@
 @use '@carbon/layout';
 @import 'utilities/__variables.scss';
 
-.App {
-    background-color: $background-light;
+body {
+    background-color: $background;
     font-family: 'Open Sans';
 }
 
 // Navigation Component
 .navigation {
     height: 105px;
-    background-color: $asset-light;
+    background-color: $asset;
     position: fixed;
     z-index: 1000;
     display: flex;
@@ -33,5 +33,9 @@
 
     &--item {
         margin-right: layout.$spacing-06;
+
+        &:hover {
+            color: $brand-01;
+        }
     }
 }
