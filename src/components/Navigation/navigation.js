@@ -12,7 +12,7 @@ const Navigation = () => {
             </div>
             <ul className="navigation--items">
                 <li className="navigation--item">
-                    Members
+                <Link to="/members">Members</Link>
                 </li>
                 <li className="navigation--item">
                     Events
