@@ -1,0 +1,37 @@
+@use '@carbon/layout';
+@import 'utilities/__variables.scss';
+
+.App {
+    background-color: $background-light;
+    font-family: 'Open Sans';
+}
+
+// Navigation Component
+.navigation {
+    height: 105px;
+    background-color: $asset-light;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    &--homeIcon {
+        height: inherit;
+        margin-left: layout.$spacing-05;
+        img {
+            height: inherit;
+        }
+    }
+
+    &--items {
+        display: flex;
+        list-style-type: none;
+    }
+
+    &--item {
+        margin-right: layout.$spacing-06;
+    }
+}

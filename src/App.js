@@ -1,5 +1,5 @@
 import './sass/app.scss';
-import Navigation from './sass/components/Navigation/navigation.js';
+import Navigation from './components/Navigation/navigation.js';
 
 const App = () => {
     return (
