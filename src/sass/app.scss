@@ -4,6 +4,7 @@
 body {
     background-color: $background;
     font-family: 'Open Sans';
+
 }
 
 // Navigation Component
@@ -37,5 +38,20 @@ body {
         &:hover {
             color: $brand-01;
         }
+    }
+}
+
+.primary-button{
+    position: relative;
+    padding: 10px 40px;
+    color: #b31227;
+    background: #ffffff;
+    border: 2px solid #b31227;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover{
+        background: #fce8eb;
+        cursor: pointer;
     }
 }
