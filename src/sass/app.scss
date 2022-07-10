@@ -11,16 +11,21 @@ body {
 .navigation {
     height: 105px;
     background-color: $asset;
+    justify-content: space-between;
     position: fixed;
     z-index: 1000;
     display: flex;
-    align-items: center;
     top: 0;
     right: 0;
     left: 0;
 
+    &--col {
+        display: flex;
+        align-items: center;
+    }
+
     &--homeIcon {
-        height: inherit;
+        height: 105px;
         margin-left: layout.$spacing-05;
         img {
             height: inherit;
@@ -38,6 +43,16 @@ body {
         &:hover {
             color: $brand-01;
         }
+    }
+
+    &--profile-image-container {
+        width: 65px;
+        height: 65px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 2px solid $brand-01;
+        margin-right: layout.$spacing-06;
     }
 }
 
