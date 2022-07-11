@@ -4,6 +4,11 @@ import './sass/index.scss';
 import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Members from './components/pages/Members';
+import Events from './components/pages/Events';
+import Training from './components/pages/Training';
+import StudentOrgs from './components/pages/StudentOrgs';
+import Resources from './components/pages/Resources';
+import Apply from './components/pages/Apply';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +16,11 @@ root.render(
     <Routes>
         <Route path="/" element={<App />} >
             <Route path="members" element={<Members/>}/>
+            <Route path="events" element={<Events/>}/>
+            <Route path="training" element={<Training/>}/>
+            <Route path="student-orgs" element={<StudentOrgs/>}/>
+            <Route path="resources" element={<Resources/>}/>
+            <Route path="apply" element={<Apply/>}/>
         </Route>
     </Routes>
   </BrowserRouter>

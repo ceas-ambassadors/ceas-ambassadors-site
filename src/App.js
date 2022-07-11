@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 const App = () => {
     return (
         <div className='App'>
-        <Navigation></Navigation>
+            <Navigation></Navigation>
         {/* <Button kind="primary-butt
         on fuck-da-police" onClick={onc} text="buts" ></Button> */}
         <Outlet/>
