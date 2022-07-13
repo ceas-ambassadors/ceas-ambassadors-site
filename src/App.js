@@ -2,11 +2,16 @@ import './sass/app.scss';
 
 import Navigation from './components/Navigation/Navigation.js';
 import { Outlet } from 'react-router-dom';
+import { Row } from '@carbon/react';
 
 const App = () => {
     return (
         <div className='App'>
-            <Navigation></Navigation>
+            <div className='grid-container'>
+                <Row>
+                    <Navigation/>
+                </Row>
+            </div>
         {/* <Button kind="primary-butt
         on fuck-da-police" onClick={onc} text="buts" ></Button> */}
         <Outlet/>

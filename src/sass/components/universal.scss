@@ -51,17 +51,33 @@
         position: relative;
         overflow: hidden;
         border-radius: 50%;
-        border: 2px solid $brand-01;
+        border: 2px solid $brand-01; // remove after images load
         margin-right: layout.$spacing-06;
         margin-top: layout.$spacing-05;
+        &:hover {
+            cursor: pointer;
+        }
     }
 
-    &-profile-modal {
-        border: red 2px solid;
-        margin: 17px;
-        width: 90px;
-        padding: 4px;
-        position: relative;
+    &--profile-modal {
+        text-align: right;
+        margin-right: layout.$spacing-07;
+        position: absolute;
+        box-shadow: 0 3px 6px #E2E2E2;
+        top: 92px;
+
+        &-item {
+            border: $brand-01 1px solid;
+            padding: layout.$spacing-03;
+            width: layout.$spacing-11;
+            background-color: $asset;
+        }
+    }
+
+    &--profile-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 
@@ -79,4 +95,12 @@
         background: #fce8eb;
         cursor: pointer;
     }
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-item {
+    padding: 10em;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import '../../sass/app.scss';
 
@@ -38,7 +38,16 @@ const Navigation = ( email, imageURL ) => {
                 <div className='navigation--profile-image-container' onClick={() => setProfileModalOpen(!profileModalOpen)}>
                     <img src='./default-prof-image.png' alt='{email}'/>
                 </div>
-                {profileModalOpen ? <div className="navigation--profile-modal">LilMems</div>: <></>}
+                {profileModalOpen ? 
+                    <div className="navigation--profile-modal">
+                        <div className="navigation--profile-modal-item">
+                            Settings
+                        </div>
+                        <div className="navigation--profile-modal-item" style={{ transform: 'translateY(-1px)' }}>
+                            Logout
+                        </div>   
+                    </div>
+                : <></>}
             </span>
         </div>
     );
