@@ -1,6 +1,9 @@
 @use '@carbon/layout';
 @import 'utilities/__variables.scss';
 @import 'components/universal.scss';
+@import 'components/student-orgs.scss';
+@import 'components/apply.scss';
+@import 'components/settings.scss';
 
 body {
     background-color: $background;

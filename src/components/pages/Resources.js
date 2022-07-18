@@ -4,11 +4,11 @@ import React from 'react';
 // TODO: Figure out passing params in onClick
  const Resources = () => {
     return (
-        <Row>
+        <Row className='resources page-content'>
             <Column>
-                <div className="grid-item">
+                <div className='grid-item'>
                     <h1>Resources</h1>
-                    <p style={{ fontStyle: 'italic' }}>Jazz that we call Resources.</p>
+                    <p style={{ fontStyle: 'italic' }}>References and information for ambassador’s success.</p>
                 </div>
             </Column>
         </Row>

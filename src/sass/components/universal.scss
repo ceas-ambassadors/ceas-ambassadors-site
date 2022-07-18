@@ -62,15 +62,29 @@
     &--profile-modal {
         text-align: right;
         margin-right: layout.$spacing-07;
+            background-color: $asset;
         position: absolute;
         box-shadow: 0 3px 6px #E2E2E2;
-        top: 92px;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        height: 117px;
 
         &-item {
             border: $brand-01 1px solid;
             padding: layout.$spacing-03;
-            width: layout.$spacing-11;
-            background-color: $asset;
+            padding-left: 1.9em;
+            text-decoration: none;
+            color: inherit;
+
+            &-active {
+                border: #EC1718 1px solid;
+                padding: layout.$spacing-03;
+                padding-left: layout.$spacing-06;
+                text-decoration: none;
+                font-weight: bold;
+                color: inherit;
+            }
         }
     }
 
@@ -82,25 +96,79 @@
 }
 
 // Button component
-.primary-button{
-    position: relative;
-    padding: 10px 40px;
-    color: #b31227;
-    background: #ffffff;
-    border: 2px solid #b31227;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: 0.2s;
-    &:hover{
-        background: #fce8eb;
-        cursor: pointer;
+.button {
+    &--primary {
+        position: relative;
+        padding: 10px 40px;
+        color: #b31227;
+        background: #ffffff;
+        border: 2px solid #b31227;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover {
+            background: #fce8eb;
+            cursor: pointer;
+        }
     }
 }
 
+// Text Input
+.textInput {
+    width: 100%;
+    margin-right: 2em;
+
+    h4 {
+        font-weight: bold;
+    }
+
+    &--title {
+        margin-bottom: layout.$spacing-03;
+    }
+    
+    &--input {
+        border: #707070 1px solid;
+        height: layout.$spacing-06;
+        width: 100%;
+    }
+    
+    .standard {
+        
+    }    
+}
+
+// Checkbox
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2em;
+
+    &--title {
+        margin-bottom: layout.$spacing-03;
+    }
+
+    &--icon {
+        height: 28px;
+        width: 28px;
+
+        .checked {
+            fill: $brand-01;
+        } 
+
+        .unchecked {
+            border: #707070 1px solid;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// Etc.
 .grid-container {
     display: grid;
 }
 
-.grid-item {
+.page-content {
     padding: 10em;
 }

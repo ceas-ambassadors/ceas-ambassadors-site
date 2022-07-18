@@ -1,10 +1,10 @@
 import React from 'react';
 
 // TODO: Figure out passing params in onClick
- const Button = ({kind, onClick, text}) => {
+ const Button = ({ type, onClick }) => {
     return (
         <div>
-            <button className= {kind} onClick={onClick}>{text}</button>
+            <button className={`button--${type}`} onClick={onClick}></button>
         </div>
     );
 };

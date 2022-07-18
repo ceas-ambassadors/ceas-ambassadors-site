@@ -1,0 +1,14 @@
+.apply {
+    &--content {
+        display: flex;
+    }
+
+    &--application {
+        flex: .6 .4;
+        margin-right: layout.$spacing-12;
+    }
+
+    &--question-timeline {
+        flex: .4 .6;
+    }
+}

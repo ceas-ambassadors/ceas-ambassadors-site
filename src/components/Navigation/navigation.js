@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Route } from 'react-router-dom';
 
 import '../../sass/app.scss';
 
@@ -10,7 +10,7 @@ const Navigation = ( email, imageURL ) => {
     return (
         <div className='navigation'>
             <div className='navigation--col'>
-                <NavLink to='/home'>
+                <NavLink to='/'>
                     <img src='./amb-logo.png' alt='CEAS Ambassadors' className='navigation--homeIcon'/>
                 </NavLink>
                 <ul className='navigation--items'>
@@ -40,10 +40,17 @@ const Navigation = ( email, imageURL ) => {
                 </div>
                 {profileModalOpen ? 
                     <div className="navigation--profile-modal">
-                        <div className="navigation--profile-modal-item">
+                        <NavLink to='/settings' className={e => (e.isActive ? 'navigation--profile-modal-item-active' : 'navigation--profile-modal-item')}>
                             Settings
-                        </div>
-                        <div className="navigation--profile-modal-item" style={{ transform: 'translateY(-1px)' }}>
+                        </NavLink>
+                        <NavLink 
+                            to='/account' 
+                            className={e => (e.isActive ? 'navigation--profile-modal-item-active' : 'navigation--profile-modal-item')} 
+                            style={{ transform: 'translateY(-1px)' }}
+                        >
+                            Account
+                        </NavLink>
+                        <div className="navigation--profile-modal-item" style={{ transform: 'translateY(-2px)' }}>
                             Logout
                         </div>   
                     </div>

@@ -1,0 +1,11 @@
+.settings {
+    display: flex;
+
+    &--input-information {
+        width: 75%
+    }
+
+    &--input-row {
+        display: flex;
+    }
+}
