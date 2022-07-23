@@ -6,7 +6,7 @@ import { Row, Column } from '@carbon/react';
     return (
         <div className='apply page-content'>
             <Row>
-                <Column className='grid-item'>
+                <Column>
                     <div>
                         <h1>Apply</h1>
                         <p style={{ fontStyle: 'italic' }}>Application and information for CEAS Ambassadors recruitment.</p>

@@ -2,10 +2,53 @@
     display: flex;
 
     &--input-information {
-        width: 75%
+        width: 75%;
+        margin-right: layout.$spacing-11;
     }
 
     &--input-row {
         display: flex;
+    }
+
+    &--nav-menu-item {
+        background: $asset;
+        border: $text-standard 1px solid;
+        padding: layout.$spacing-03;
+        padding-left: layout.$spacing-11;
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+
+    &--account-password {
+        width: 85%;
+    }
+
+    &--button-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5em 1.5em 0em 0em;
+    }
+
+    &--upload-profile-pic {
+        &-input {
+            display: none;
+        }
+
+        &-label {
+            background: $brand-02;
+            padding: 10px 40px;
+            border-radius: 4px;
+            position: relative;
+            text-decoration: none;
+            color: $asset;
+            font-size: 14px;
+            
+            &:hover {
+                background: $hover-02;
+                cursor: pointer;
+            }
+        }
     }
 }

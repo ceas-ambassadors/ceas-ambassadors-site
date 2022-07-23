@@ -1,0 +1,14 @@
+.resources {
+    &--content {
+        display: flex;
+    }
+    
+    &--info-booklet {
+        flex: .3 .7;
+        margin-right: layout.$spacing-09;
+    }
+
+    &--calendar {
+        flex: .7 .3ß;
+    }
+}

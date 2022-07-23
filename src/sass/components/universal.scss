@@ -68,7 +68,7 @@
         display: flex;
         flex-direction: column;
         top: 100px;
-        height: 117px;
+        height: 77px;
 
         &-item {
             border: $brand-01 1px solid;
@@ -97,19 +97,26 @@
 
 // Button component
 .button {
+    padding: 10px 40px;
+    border-radius: 4px;
+    position: relative;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 14px;
+
     &--primary {
-        position: relative;
-        padding: 10px 40px;
-        color: #b31227;
-        background: #ffffff;
-        border: 2px solid #b31227;
-        border-radius: 4px;
-        text-decoration: none;
+        color: $brand-03;
+        background: $asset;
+        border: 2px solid $brand-03;
         transition: 0.2s;
         &:hover {
-            background: #fce8eb;
+            background: $hover-01;
             cursor: pointer;
         }
+    }
+
+    &--secondary {
+        background: $brand-02;
     }
 }
 
@@ -132,8 +139,8 @@
         width: 100%;
     }
     
-    .standard {
-        
+    &.disabled {
+        opacity: 50%;
     }    
 }
 
@@ -161,6 +168,10 @@
             width: 100%;
             height: 100%;
         }
+    }
+
+    &:hover {
+        cursor: pointer;
     }
 }
 

@@ -1,11 +1,15 @@
 import React from 'react';
+import { Row, Column } from '@carbon/react';
 
 // TODO: Figure out passing params in onClick
  const Members = () => {
     return (
-        <div>
-            <h1>Members Page!</h1>
-        </div>
+        <Row className='page-content'>
+            <Column>
+                <h1>Meetings</h1>
+                
+            </Column>
+        </Row>
     );
 };
 

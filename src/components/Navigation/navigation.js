@@ -43,14 +43,14 @@ const Navigation = ( email, imageURL ) => {
                         <NavLink to='/settings' className={e => (e.isActive ? 'navigation--profile-modal-item-active' : 'navigation--profile-modal-item')}>
                             Settings
                         </NavLink>
-                        <NavLink 
+                        {/* <NavLink 
                             to='/account' 
                             className={e => (e.isActive ? 'navigation--profile-modal-item-active' : 'navigation--profile-modal-item')} 
                             style={{ transform: 'translateY(-1px)' }}
                         >
                             Account
-                        </NavLink>
-                        <div className="navigation--profile-modal-item" style={{ transform: 'translateY(-2px)' }}>
+                        </NavLink> */}
+                        <div className="navigation--profile-modal-item" style={{ transform: 'translateY(-1px)' }}>
                             Logout
                         </div>   
                     </div>
