@@ -15,22 +15,22 @@ const Navigation = ( email, imageURL ) => {
                 </NavLink>
                 <ul className='navigation--items'>
                     <li> 
-                        <NavLink to='/members' className={e => (e.isActive ? 'navigation--item-active' : 'navigation--item')}>Members</NavLink>
+                        <NavLink to='/members' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')}>Members</NavLink>
                     </li>
                     <li>
-                        <NavLink to='events' className={e => (e.isActive ? 'navigation--item-active' : 'navigation--item')}>Events</NavLink>
+                        <NavLink to='events' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')}>Events</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/training' className={e => (e.isActive ? 'navigation--item-active' : 'navigation--item')}>Training</NavLink>
+                        <NavLink to='/training' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')}>Training</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/student-orgs' className={e => (e.isActive ? 'navigation--item-active' : 'navigation--item')}>Student Orgs</NavLink>
+                        <NavLink to='/student-orgs' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')}>Student Orgs</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/resources' className={e => (e.isActive ? 'navigation--item-active' : 'navigation--item')}>Resources</NavLink>
+                        <NavLink to='/resources' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')}>Resources</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/apply' className={e => (e.isActive ? 'navigation--item-active' : 'navigation--item')}>Apply</NavLink>
+                        <NavLink to='/apply' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')}>Apply</NavLink>
                     </li>
                 </ul>
             </div>
@@ -40,12 +40,12 @@ const Navigation = ( email, imageURL ) => {
                 </div>
                 {profileModalOpen ? 
                     <div className="navigation--profile-modal">
-                        <NavLink to='/settings' className={e => (e.isActive ? 'navigation--profile-modal-item-active' : 'navigation--profile-modal-item')}>
+                        <NavLink to='/settings' className={e => (e.isActive ? 'navigation--profile-modal-item active' : 'navigation--profile-modal-item')}>
                             Settings
                         </NavLink>
                         {/* <NavLink 
                             to='/account' 
-                            className={e => (e.isActive ? 'navigation--profile-modal-item-active' : 'navigation--profile-modal-item')} 
+                            className={e => (e.isActive ? 'navigation--profile-modal-item active' : 'navigation--profile-modal-item')} 
                             style={{ transform: 'translateY(-1px)' }}
                         >
                             Account

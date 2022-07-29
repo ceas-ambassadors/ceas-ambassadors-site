@@ -1,0 +1,19 @@
+.training {
+    display: flex;
+
+    &--resources {
+        margin-right: layout.$spacing-12;
+        margin-top: layout.$spacing-08;
+    }
+
+    &--resource {
+        &.tbd {
+            height: 430px;
+            width: 830px;
+            background: lightblue;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

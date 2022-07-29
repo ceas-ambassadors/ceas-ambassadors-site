@@ -35,9 +35,10 @@
 
         &:hover {
             color: $brand-01;
+            cursor: pointer;
         }
 
-        &-active {
+        &.active {
             margin-right: layout.$spacing-06;
             text-decoration: none;
             font-weight: bold;
@@ -62,7 +63,7 @@
     &--profile-modal {
         text-align: right;
         margin-right: layout.$spacing-07;
-            background-color: $asset;
+        background-color: $asset;
         position: absolute;
         box-shadow: 0 3px 6px #E2E2E2;
         display: flex;
@@ -75,15 +76,19 @@
             padding: layout.$spacing-03;
             padding-left: 1.9em;
             text-decoration: none;
-            color: inherit;
+            color: $text-standard;
 
-            &-active {
+            &:hover {
+                cursor: pointer;
+                color: $brand-01;
+            }
+
+            &.active {
                 border: #EC1718 1px solid;
                 padding: layout.$spacing-03;
                 padding-left: layout.$spacing-06;
                 text-decoration: none;
                 font-weight: bold;
-                color: inherit;
             }
         }
     }

@@ -19,6 +19,11 @@
         &.active {
             font-weight: bold;
         }
+
+        &:hover {
+            cursor: pointer;
+            color: $brand-01;
+        }
     }
 
     &--account-password {
