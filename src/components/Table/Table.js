@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Table = ({  }) => {
+const Table = () => {
     return (
         <div className='table'>
-            
+            <hr></hr>
         </div>
     );
 }

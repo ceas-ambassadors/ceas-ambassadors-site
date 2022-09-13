@@ -46,17 +46,21 @@
         }
     }
 
-    &--profile-image-container {
-        width: 65px;
-        height: 65px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 50%;
-        border: 2px solid $brand-01; // remove after images load
-        margin-right: layout.$spacing-06;
-        margin-top: layout.$spacing-05;
-        &:hover {
-            cursor: pointer;
+    &--profile-image {
+        height: inherit;
+        width: inherit;
+        
+        &-container {
+            width: 65px;
+            height: 65px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: layout.$spacing-06;
+            margin-top: layout.$spacing-05;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, Route } from 'react-router-dom';
+import defaultProfImg from '../../images/default-prof-image.jpeg';
 
 import '../../sass/app.scss';
 
@@ -36,7 +37,7 @@ const Navigation = ( email, imageURL ) => {
             </div>
             <span className='navigation--profile-col'>
                 <div className='navigation--profile-image-container' onClick={() => setProfileModalOpen(!profileModalOpen)}>
-                    <img src='./default-prof-image.png' alt='{email}'/>
+                    <img src={defaultProfImg} alt='{email}' className='navigation--profile-image'/>
                 </div>
                 {profileModalOpen ? 
                     <div className="navigation--profile-modal">
