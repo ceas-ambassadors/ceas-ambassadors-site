@@ -28,7 +28,7 @@ import { Row, Column } from '@carbon/react';
             setError(error);
           }
         )
-    }, [])
+    }, []);
     return (
         <Row className='page-content'>
             <h1>
