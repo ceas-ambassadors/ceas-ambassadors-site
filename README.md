@@ -8,6 +8,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run dev`
+Runs the backend as well as frontend to be able to make get and post requests
+Note - backend runs on port 9000 as of now
+
 ### `npm start`
 
 Runs the app in the development mode.\

@@ -1,6 +1,6 @@
 import './sass/app.scss';
 
-import Navigation from './components/Navigation/Navigation.js';
+import Navigation from './components/Navigation/navigation.js';
 import { Outlet } from 'react-router-dom';
 import { Row } from '@carbon/react';
 
