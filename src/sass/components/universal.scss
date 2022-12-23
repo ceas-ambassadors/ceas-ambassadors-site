@@ -1,7 +1,7 @@
 // Navigation Component
 .navigation {
     height: 105px;
-    background-color: $asset;
+    background-color: $asset1;
     justify-content: space-between;
     position: fixed;
     z-index: 1000;
@@ -36,6 +36,7 @@
         &:hover {
             color: $brand-01;
             cursor: pointer;
+            text-decoration: none;
         }
 
         &.active {
@@ -67,7 +68,7 @@
     &--profile-modal {
         text-align: right;
         margin-right: layout.$spacing-07;
-        background-color: $asset;
+        background-color: $asset1;
         position: absolute;
         box-shadow: 0 3px 6px #E2E2E2;
         display: flex;
@@ -85,6 +86,7 @@
             &:hover {
                 cursor: pointer;
                 color: $brand-01;
+                text-decoration: none;
             }
 
             &.active {
@@ -106,36 +108,60 @@
 
 // Button component
 .button {
-    padding: 10px 40px;
+    padding: 10px 35px;
     border-radius: 4px;
     position: relative;
     text-decoration: none;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 16px;
 
     &--primary {
         color: $brand-03;
-        background: $asset;
+        background: $asset1;
         border: 2px solid $brand-03;
         transition: 0.2s;
         &:hover {
             background: $hover-01;
-            cursor: pointer;
         }
     }
 
     &--secondary {
         background: $brand-02;
     }
+
+    &--admin {
+        color: $asset1;
+        border: none;
+        background: $brand-01;
+        &:hover {
+            background: $brand-02;
+        }
+    }
+
+    &--icon-only {
+        padding: 10px 14px;
+        color: $asset1;
+        border: none;
+        background: $brand-01;
+        &:hover {
+            background: $brand-02;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 // Text Input
 .textInput {
     width: 100%;
-    margin-right: 2em;
+    margin-right: layout.$spacing-07;
+    padding: 0px 0px 12px 0px;
 
     h4 {
         font-weight: bold;
+        margin: 4px 0;
     }
 
     &--title {
@@ -144,10 +170,23 @@
     
     &--input {
         border: #707070 1px solid;
-        height: layout.$spacing-06;
+        height: layout.$spacing-08;
+        padding: layout.$spacing-04;
         width: 100%;
     }
-    
+
+    &.modal .textInput{
+        margin-right: 0;
+    }
+
+    &.large input{
+        height: 125px;
+    }
+
+    &.long input{
+        height: 75px;
+    }
+
     &.disabled {
         opacity: 50%;
     }    
@@ -158,10 +197,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 2em;
+    margin-right: layout.$spacing-07;
+    justify-content: center;
 
     &--title {
-        margin-bottom: layout.$spacing-03;
+        margin: 0 0 layout.$spacing-03 0;
     }
 
     &--icon {
@@ -182,6 +222,10 @@
     &:hover {
         cursor: pointer;
     }
+
+    &.modal {
+        margin-right: 0;
+    }
 }
 
 // Etc.
@@ -191,4 +235,10 @@
 
 .page-content {
     padding: 10em;
+}
+
+.close-icon {
+    &:hover {
+        cursor: pointer;
+    }
 }

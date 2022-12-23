@@ -4,6 +4,7 @@ import { Row, Column } from '@carbon/react';
 import TextInput from '../TextInput/TextInput.js';
 import Checkbox from '../Checkbox/Checkbox.js';
 import Button from '../Button/Button.js'
+import { View } from '@carbon/icons-react';
 
 const Settings = () => {
 
@@ -14,8 +15,11 @@ const Settings = () => {
         <Row className='settings page-content'>
             {activeTab === 'Display' ? 
                 (<Column className='settings--input-information'>
-                    <h1>Update Profile</h1>
-                    <h3 style={{ fontWeight: 'normal', margin: '1.5em 0 0 0' }}>Personal Information</h3>
+                    <div className='settings--header'>
+                        <h1>Update Profile</h1>
+                        <Button type='icon-only'><View size={16}/></Button>
+                    </div>
+                    <h3 style={{ fontWeight: 'normal', margin: '.5em 0 0 0' }}>Personal Information</h3>
                     <div className='settings--input-row'>
                         <TextInput>First Name</TextInput>
                         <TextInput>Last Name</TextInput>

@@ -6,14 +6,16 @@ const UserCard = ({ children, email, major, year, coops }) => {
         <div className='memberCard'>
             <div className='memberCard--profile-pic'>
                 <div className='memberCard--profile-image-container'>
-                    <img src={defaultProfImg} alt='{email}' className='memberCard--profile-image'/>
+                    <img src={defaultProfImg} alt={email} className='memberCard--profile-image'/>
                 </div>
             </div>
             <div className='memberCard--info'>
                 <h1>{children}</h1>
-                <p>{email}</p>
-                <p>{major}</p>
-                <p>Class of {year}</p>
+                <p className='memberCard--email'>{email}</p>
+                <div className='memberCard--student-info'>
+                    <p>{major}</p>
+                    <p>Class of {year}</p>
+                </div>
                 <p>Co-ops: {coops}</p>
             </div>
         </div>

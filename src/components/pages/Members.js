@@ -15,14 +15,23 @@ import { getMembers } from '../../services/memberService';
         .then(res => setItems(res.data['members']))
     }, [])
     console.log(items);
+
     return (
         <Row className='page-content'>
             <Column>
                 <h1>Members</h1>
                 { items.map(member => (
-                <UserCard email={member.email} major={member.major} year={member.grad_year} coops={member.coops}></UserCard>
+                <UserCard className='user-card' email={member.email} major={member.major} year={member.grad_year} coops={member.coops}>{member.name}</UserCard>
                 ))
                 }
+                <div className='members--table'>
+                    <UserCard className='user-card' email="buttern@mail.uc.edu" major="Computer Engineering" year="2023" coops="PornHub">Randy Butternubs</UserCard>
+                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple">Wagon man</UserCard>
+                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple">Wagon man</UserCard>
+                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple">Wagon man</UserCard>
+                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple">Wagon man</UserCard>
+                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple">Wagon man</UserCard>
+                </div>
             </Column>
         </Row>
     );

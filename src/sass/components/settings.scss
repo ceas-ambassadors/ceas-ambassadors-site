@@ -11,7 +11,7 @@
     }
 
     &--nav-menu-item {
-        background: $asset;
+        background: $asset1;
         border: $text-standard 1px solid;
         padding: layout.$spacing-03;
         padding-left: layout.$spacing-11;
@@ -24,6 +24,12 @@
             cursor: pointer;
             color: $brand-01;
         }
+    }
+
+    &--header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &--account-password {
@@ -47,7 +53,7 @@
             border-radius: 4px;
             position: relative;
             text-decoration: none;
-            color: $asset;
+            color: $asset1;
             font-size: 14px;
             
             &:hover {
