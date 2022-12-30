@@ -3,6 +3,7 @@ import './sass/app.scss';
 import Navigation from './components/Navigation/Navigation.js';
 import { Outlet } from 'react-router-dom';
 import { Row } from '@carbon/react';
+import Home from './components/pages/Home';
 
 const App = () => {
     return (

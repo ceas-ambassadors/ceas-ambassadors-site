@@ -26,11 +26,11 @@ import { getMembers } from '../../services/memberService';
                 }
                 <div className='members--table'>
                     <UserCard className='user-card' email="buttern@mail.uc.edu" major="Computer Engineering" year="2023" coops="PornHub">Randy Butternubs</UserCard>
-                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple">Wagon man</UserCard>
-                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple">Wagon man</UserCard>
-                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple">Wagon man</UserCard>
-                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple">Wagon man</UserCard>
-                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple">Wagon man</UserCard>
+                    <UserCard className='user-card' email="wagonman@mail.uc.edu" major="Computer Science" year="2023" coops="Apple, Google, IBM">Wagon man</UserCard>
+                    <UserCard className='user-card' email="chips@mail.uc.edu" major="Chemical Engineering" year="2025" coops="Dow, Medpace">Chippo Dip</UserCard>
+                    <UserCard className='user-card' email="gimpy@mail.uc.edu" major="Environmental Engineering" year="2027" coops="P&G">Gimpy Thunderclap</UserCard>
+                    <UserCard className='user-card' email="nimbus@mail.uc.edu" major="Industrial Engineering" year="2024" coops="Meta, Tik Tok">Nimbus Koby Bryant</UserCard>
+                    <UserCard className='user-card' email="crangada@mail.uc.edu" major="Cybersecurity Engineering" year="2027" coops="Apple">Cranberry Gada</UserCard>
                 </div>
             </Column>
         </Row>

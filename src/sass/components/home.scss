@@ -1,0 +1,10 @@
+.home {
+    &--featured-ambassadors {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &--upcoming-events {
+        display: flex;
+    }
+}

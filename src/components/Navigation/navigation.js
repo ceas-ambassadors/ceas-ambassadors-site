@@ -11,7 +11,7 @@ const Navigation = ( email, imageURL ) => {
     return (
         <div className='navigation'>
             <div className='navigation--col'>
-                <NavLink to='/'>
+                <NavLink to='/home'>
                     <img src='./amb-logo.png' alt='CEAS Ambassadors' className='navigation--homeIcon'/>
                 </NavLink>
                 <ul className='navigation--items'>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './sass/index.scss';
 import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/pages/Home';
 import Members from './components/pages/Members';
 import Events from './components/pages/Events';
 import Training from './components/pages/Training';
@@ -16,6 +17,7 @@ root.render(
   <BrowserRouter>
     <Routes>
         <Route path="/" element={<App />} >
+            <Route path="home" element={<Home/>}/>
             <Route path="members" element={<Members/>}/>
             <Route path="events" element={<Events/>}/>
             <Route path="training" element={<Training/>}/>

@@ -48,16 +48,19 @@ import { Close } from '@carbon/icons-react';
                   <Close size={24}/>
                 </div>
               </div>
-              <TextInput>Title</TextInput>
+              <TextInput placeholderText='First General Body Meeting'>Title</TextInput>
               <div className='meetings--modal-multi-inputs'>
-                <TextInput textboxWidth='50'>Start Time</TextInput>
-                <TextInput type='modal' textboxWidth='50'>End Time</TextInput>
+                <TextInput textboxWidth='50' placeholderText='2023 January 01 12:30 PM'>Start Time</TextInput>
+                <TextInput type='modal' textboxWidth='50' placeholderText='2023 January 01 1:30 PM'>End Time</TextInput>
               </div>
               <div className='meetings--modal-multi-inputs'>
-                <TextInput>Location</TextInput>
+                <TextInput placeholderText='CRC 3250'>Location</TextInput>
                 <Checkbox title='Public' checked={publicEvent} type='modal' onClick={() => setPublicEvent(!publicEvent)}/>
               </div>
-              <TextInput>Speakers</TextInput>
+              <div className='meetings--modal-multi-inputs'>
+                <TextInput placeholderText='Jeremy Hill'>Speakers</TextInput>
+                <TextInput placeholderText="Richie's Chicken">Food</TextInput>
+              </div>
               <TextInput type='large'>Description</TextInput>
               <div className='meetings--modal-actions'>
                 <Button type='admin'>Add Meeting</Button>
@@ -81,43 +84,46 @@ import { Close } from '@carbon/icons-react';
                   <Close size={24}/>
                 </div>
               </div>
-              <TextInput>Title</TextInput>
+              <TextInput placeholderText='College Close-up'>Title</TextInput>
               <div className='meetings--modal-multi-inputs'>
-                <TextInput textboxWidth='50'>Start Time</TextInput>
-                <TextInput type='modal' textboxWidth='50'>End Time</TextInput>
+                <TextInput textboxWidth='50' placeholderText='2023 January 01 11:30 AM'>Start Time</TextInput>
+                <TextInput type='modal' textboxWidth='50' placeholderText='2023 January 01 1:30 PM'>End Time</TextInput>
               </div>
               <div className='meetings--modal-multi-inputs'>
-                <TextInput>Location</TextInput>
+                <TextInput placeholderText='Mantei 427'>Location</TextInput>
                 <Checkbox title='Public' checked={publicEvent} onClick={() => setPublicEvent(!publicEvent)}/>
-                <TextInput>Max Ambassadors</TextInput>
-                <TextInput>Point Value</TextInput>
+                <TextInput placeholderText='5'>Max Ambassadors</TextInput>
+                <TextInput placeholderText='1'>Point Value</TextInput>
               </div>
               <h4 className='meetings--modal-radio-title'>Event Type</h4>
-              <RadioButtonGroup className='meetings--modal-radio-group'>
+              <RadioButtonGroup 
+                className='meetings--modal-radio-group' 
+                defaultSelected='tour'
+              >
                 <RadioButton
-                    labelText="Tour"
-                    value="tour"
-                    id="tour-radio-option"
+                    labelText='Tour'
+                    value='tour'
+                    id='tour-radio-option'
                 />
                 <RadioButton
-                    labelText="1:1"
-                    value="one-on-one"
-                    id="one-on-one-radio-option"
+                    labelText='1:1'
+                    value='one-on-one'
+                    id='one-on-one-radio-option'
                 />
                 <RadioButton
-                    labelText="Panel"
-                    value="panel"
-                    id="panel-radio-option"
+                    labelText='Panel'
+                    value='panel'
+                    id='panel-radio-option'
                 />
                 <RadioButton
-                    labelText="Instagram Takeover"
-                    value="instagram-takeover"
-                    id="instagram-takeover-radio-option"
+                    labelText='Instagram Takeover'
+                    value='instagram-takeover'
+                    id='instagram-takeover-radio-option'
                 />
                 <RadioButton
-                    labelText="Other"
-                    value="other"
-                    id="other-radio-option"
+                    labelText='Other'
+                    value='other'
+                    id='other-radio-option'
                 />
               </RadioButtonGroup>
               <TextInput type='long'>Description</TextInput>
