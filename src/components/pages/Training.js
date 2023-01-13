@@ -8,25 +8,25 @@ import { Row, Column } from '@carbon/react';
             <Column>
                 <div className='training--title'>
                     <h1>Training</h1>
-                    <p style={{ fontStyle: 'italic' }}>Orientation info and documentation for new ambassadors.</p>
+                    <p className='page-description'>Orientation info and documentation for new ambassadors.</p>
                 </div>
                 <div className='training--resources'>
                     <div className='training--resource'>
                         <h2>Orientation Slide Deck</h2>
                         <p>Late Updated: June 28, 2022</p>
-                        <iframe title='Summer 2022 Onboarding Slides' src='https://docs.google.com/presentation/d/19CVXW6lp0fqMRS4esB31DqHlkxxlD2ZSr3dpG7zp6uw/preview?slide=id.p' width='830' height='430'></iframe>
+                        <iframe title='Summer 2022 Onboarding Slides' src='https://docs.google.com/presentation/d/19CVXW6lp0fqMRS4esB31DqHlkxxlD2ZSr3dpG7zp6uw/preview?slide=id.p' width='630' height='330'></iframe>
                     </div>
                     <div className='training--resource'>
                         <h2>Site Orientation</h2>
                         <p>Late Updated: --</p>
                         <div className='training--resource tbd'>Coming soon...</div>
-                        {/* <iframe title='Tech Orientation' src='https://docs.google.com/presentation/d/19CVXW6lp0fqMRS4esB31DqHlkxxlD2ZSr3dpG7zp6uw/preview?slide=id.p' width='830' height='430'></iframe> */}
+                        {/* <iframe title='Tech Orientation' src='https://docs.google.com/presentation/d/19CVXW6lp0fqMRS4esB31DqHlkxxlD2ZSr3dpG7zp6uw/preview?slide=id.p' width='630' height='330'></iframe> */}
                     </div>
                     <div className='training--resource'>
                         <h2>Public Safety Orientation</h2>
                         <p>Late Updated: --</p>
                         <div className='training--resource tbd'>Coming soon...</div>
-                        {/* <iframe title='Tech Orientation' src='https://docs.google.com/presentation/d/19CVXW6lp0fqMRS4esB31DqHlkxxlD2ZSr3dpG7zp6uw/preview?slide=id.p' width='830' height='430'></iframe> */}
+                        {/* <iframe title='Tech Orientation' src='https://docs.google.com/presentation/d/19CVXW6lp0fqMRS4esB31DqHlkxxlD2ZSr3dpG7zp6uw/preview?slide=id.p' width='630' height='330'></iframe> */}
                     </div>
                 </div>
             </Column>

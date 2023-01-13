@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Route } from 'react-router-dom';
 import defaultProfImg from '../../images/default-prof-image.jpeg';
+import { Menu } from '@carbon/icons-react';
 
 import '../../sass/app.scss';
 
@@ -10,7 +11,7 @@ const Navigation = ( email, imageURL ) => {
 
     return (
         <div className='navigation'>
-            <div className='navigation--col'>
+            <div className='navigation--col navigation--content'>
                 <NavLink to='/home'>
                     <img src='./amb-logo.png' alt='CEAS Ambassadors' className='navigation--homeIcon'/>
                 </NavLink>
@@ -57,6 +58,9 @@ const Navigation = ( email, imageURL ) => {
                     </div>
                 : <></>}
             </span>
+            <div className='navigation--toggler'>
+                <button><Menu size={24}/></button>
+            </div>
         </div>
     );
 }

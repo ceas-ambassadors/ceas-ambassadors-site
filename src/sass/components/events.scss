@@ -46,10 +46,27 @@
         position: absolute;
         z-index: 10000;
         background-color: $asset1;
-        height: 700px;
+        // height: 700px;
+        // overflow-x: hidden;
+        // height: 80vh;
         width: 750px;
         border-radius: 12px;
         padding: 24px;
+
+        .cds--radio-button-group.cds--radio-button-group--label-right {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .textInput {
+            h4 {
+                font-size: 14px;
+            }
+
+            &--input {
+                height: 2em;
+            }
+        }
     }
 
     &-table {
@@ -68,10 +85,22 @@
         position: absolute;
         z-index: 10000;
         background-color: $asset1;
-        height: 650px;
+        // overflow-x: scroll;
+        // height: 650px;
+        // height: 80vh;
         width: 750px;
         border-radius: 12px;
         padding: 24px;
+
+        .textInput {
+            h4 {
+                font-size: 14px;
+            }
+
+            &--input {
+                height: 2em;
+            }
+        }
     }
 
     &--modal-container {

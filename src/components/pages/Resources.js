@@ -8,7 +8,7 @@ import React from 'react';
             <Row>
                 <Column>
                     <h1>Resources</h1>
-                    <p style={{ fontStyle: 'italic' }}>References and information for ambassador’s success.</p>
+                    <p className='page-description'>References and information for ambassador’s success.</p>
                 </Column>
             </Row>
             <Row className='resources--content'>

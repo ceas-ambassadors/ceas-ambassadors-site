@@ -15,6 +15,10 @@
         align-items: center;
     }
 
+    &--toggler {
+        display: none;
+    }
+
     &--homeIcon {
         height: 105px;
         margin-left: layout.$spacing-05;
@@ -106,6 +110,18 @@
     }
 }
 
+@media (max-width: 42em) {
+    .navigation {
+        &--items, &--profile-col {
+            display: none;
+        }
+
+        &--toggler {
+            display: inline;
+        }
+    }
+}
+
 // Button component
 .button {
     padding: 10px 35px;
@@ -180,7 +196,8 @@
     }
 
     &.large input{
-        height: 125px;
+        // height: 125px;
+        height: 100%;
     }
 
     &.long input{
@@ -235,6 +252,10 @@
 
 .page-content {
     padding: 10em;
+}
+
+.page-description {
+    font-style: italic;
 }
 
 .close-icon {

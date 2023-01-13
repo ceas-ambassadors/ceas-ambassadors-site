@@ -9,7 +9,7 @@ import { Row, Column } from '@carbon/react';
                 <Column>
                     <div>
                         <h1>Apply</h1>
-                        <p style={{ fontStyle: 'italic' }}>Application and information for CEAS Ambassadors recruitment.</p>
+                        <p className='page-description'>Application and information for CEAS Ambassadors recruitment.</p>
                     </div>
                 </Column>
                 </Row>
