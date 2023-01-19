@@ -4,7 +4,7 @@
  * i.e. `...com/member/profile` would just be `create` here
  */
  const express = require('express');
- const memberHandler = require('../controllers/member');
+ const memberHandler = require('../controllers/members');
  
  const router = express.Router();
  
