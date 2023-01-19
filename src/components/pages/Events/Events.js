@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { Row, Column, RadioButton, RadioButtonGroup } from '@carbon/react';
-import Button from '../Button/Button';
-import TextInput from '../TextInput/TextInput';
-import Checkbox from '../Checkbox/Checkbox';
+import Button from '../../Button/Button';
+import TextInput from '../../TextInput/TextInput';
+import Checkbox from '../../Checkbox/Checkbox';
 import { Close } from '@carbon/icons-react';
 
 
@@ -10,7 +10,8 @@ import { Close } from '@carbon/icons-react';
  const Events = () => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [items, setItems] = useState([]);
+    const [eventsData, setEventsData] = useState([]);
+    const [meetingsData, setMeetingsData] = useState([]);
     const [publicEvent, setPublicEvent] = useState(false);
     const [meetingsModalOpen, setMeetingModalOpen] = useState(false);
     const [eventsModalOpen, setEventsModalOpen] = useState(false);
@@ -24,7 +25,8 @@ import { Close } from '@carbon/icons-react';
         .then(
           (result) => {
             setIsLoaded(true);
-            setItems(result['events']);
+            setEventsData(result['events']);
+            setMeetingsData(result['meetings']);
           },
           // Note: it's important to handle errors here
           // instead of a catch() block so that we don't swallow
@@ -36,6 +38,27 @@ import { Close } from '@carbon/icons-react';
         )
     }, []);
 
+    const ISOtoDateTime = (ISO) => {
+      let start_tod = "";
+      let convertedDate = new Date(ISO);
+      let hours = String(convertedDate).substring(15,18);
+      let minutes = String(convertedDate).substring(19,21);
+      if ((hours > 0) && (hours < 12)) {
+        start_tod = " AM";
+      }
+      else if (hours > 12) {
+        hours = hours -  12;
+        start_tod = " PM";
+      }
+      else if (hours === 12) {
+        start_tod = " PM";
+      }
+      else {
+        hours = 12;
+        start_tod = " AM";
+      }
+      return Date(ISO).substring(0,15) + " " + hours + ":" + minutes + start_tod
+    }
     const renderMeetingsModal = () => {
       if (meetingsModalOpen) {
         return (
@@ -159,7 +182,20 @@ import { Close } from '@carbon/icons-react';
                 </tr>
               </thead>
               <tbody>
-
+                {meetingsData.map((meeting) => {
+                  return (
+                    <tr>
+                      <td>{meeting.title}</td>
+                      <td>{ISOtoDateTime(meeting.start_time)}</td>
+                      <td>{ISOtoDateTime(meeting.end_time)}</td>
+                      <td>Al Medina</td>
+                      <td>{meeting.location}</td>
+                      <td>
+                        <a href={`/events/${meeting.id}`}>View</a>
+                      </td>
+                    </tr>
+                  )
+                })}
               </tbody>
             </table>
           </Row>
@@ -181,7 +217,20 @@ import { Close } from '@carbon/icons-react';
                   </tr>
                 </thead>
                 <tbody>
-                  <th></th>
+                {eventsData.map((event) => {
+                  return (
+                    <tr>
+                      <td>{event.title}</td>
+                      <td>{ISOtoDateTime(event.start_time)}</td>
+                      <td>{ISOtoDateTime(event.end_time)}</td>
+                      <td>1</td>
+                      <td>{event.location}</td>
+                      <td>
+                        <a href={`/events/${event.id}`}>View</a>
+                      </td>
+                    </tr>
+                  )
+                })}
                 </tbody>
             </table>
           </Row>

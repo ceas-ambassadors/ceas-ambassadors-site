@@ -1,13 +1,13 @@
 /**
  * Routes for the events endpoints
- * All endpoints in this file have `/event` prepended to them
- * i.e. `...com/event/create` would just be `create` here
+ * All endpoints in this file have `/events` prepended to them
+ * i.e. `...com/events/create` would just be `create` here
  */
  const express = require('express');
 
  const router = express.Router();
  
- const eventController = require('../controllers/event');
+ const eventController = require('../controllers/events');
 
  router.get('/testEvent', function (req, res, next){
     return eventController.getTestEvent(req, res, next);

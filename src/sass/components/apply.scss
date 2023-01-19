@@ -1,7 +1,4 @@
 .apply {
-    &--content {
-        display: flex;
-    }
 
     &--application {
         flex: .6 .4;
@@ -10,5 +7,10 @@
 
     &--question-timeline {
         flex: .4 .6;
+    }
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
     }
 }

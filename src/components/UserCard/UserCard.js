@@ -13,10 +13,10 @@ const UserCard = ({ children, email, major, year, coops }) => {
                 <h1>{children}</h1>
                 <p className='memberCard--email'>{email}</p>
                 <div className='memberCard--student-info'>
-                    <p>{major}</p>
-                    <p>Class of {year}</p>
+                    {major ? <p>{major}</p> : ""}
+                    {year ? <p>Class of {year}</p>: ""} 
                 </div>
-                <p>Co-ops: {coops}</p>
+                {coops ? <p>Co-ops: {coops}</p> : ""} 
             </div>
         </div>
     );

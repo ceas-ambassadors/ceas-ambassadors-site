@@ -38,7 +38,7 @@ const Navigation = ( email, imageURL ) => {
             </div>
             <span className='navigation--profile-col'>
                 <div className='navigation--profile-image-container' onClick={() => setProfileModalOpen(!profileModalOpen)}>
-                    <img src={defaultProfImg} alt='{email}' className='navigation--profile-image'/>
+                    <img src={defaultProfImg} alt='CEAS Ambassadors' className='navigation--profile-image'/>
                 </div>
                 {profileModalOpen ? 
                     <div className="navigation--profile-modal">
